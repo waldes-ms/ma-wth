@@ -5,7 +5,7 @@
         "storageAccountPrefix": {
             "type": "string",
             "metadata": {
-                "description": "Assign a prefix for the Storage account"
+                "description": "Assign Storage account name"
             }
         },
         "storageAccountType": {
@@ -68,8 +68,8 @@
             "imageOffer": "UbuntuServer",
             "imageSku": "18.04-LTS",
             "imagePublisher": "Canonical"
-        },
-        "storageName": "[concat(parameters('storageAccountPrefix'), uniqueString(resourceGroup().id))]"
+        }
+        
     },
     "resources": [
         {
@@ -177,7 +177,7 @@
         },
         {
             "type": "Microsoft.Compute/virtualMachines",
-            "apiVersion": "2019-07-01",
+            "apiVersion": "2021-03-01",
             "name": "[concat(parameters('vmNamePrefix'), '-vm')]",
             "location": "[parameters('location')]",
             "dependsOn": [
@@ -219,8 +219,8 @@
         },
         {
             "type": "Microsoft.Storage/storageAccounts",
-            "name": "[variables('storageName')]",
-            "apiVersion": "2019-06-01",
+            "name": "[parameters('storageAccountPrefix')]",
+            "apiVersion": "2021-04-01",
             "location": "[parameters('location')]",
             "sku": {
                 "name": "[parameters('storageAccountType')]"

@@ -53,9 +53,9 @@
         "vmVNetName": "vmVNet",
         "subnetName": "subnet1",
         "osType": {
-            "imageOffer": "Windows-10",
-            "imageSku": "rs5-pro",
-            "imagePublisher": "MicrosoftWindowsDesktop"
+            "imageOffer": "WindowsServer",
+            "imageSku": "2019-Datacenter",
+            "imagePublisher": "MicrosoftWindowsServer"
         }
     },
     "resources": [

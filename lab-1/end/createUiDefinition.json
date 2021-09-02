@@ -107,7 +107,8 @@
                         },
                         "options": {
                             "hideNone": true,
-                            "hideDomainNameLabel": false
+                            "hideDomainNameLabel": false,
+                            "hideExisting": true
                         },
                         "constraints": {
                             "required": {
@@ -124,19 +125,16 @@
                 "elements": [
                     {
                         "name": "storageAccount",
-                        "type": "Microsoft.Storage.MultiStorageAccountCombo",
-                        "label": {
-                            "prefix": "Storage account name prefix",
-                            "type": "Storage account type"
-                        },
+                        "type": "Microsoft.Storage.StorageAccountSelector",
+                        "label": "Storage account",
+                        "toolTip": "Click 'Create New' to set the unique name and properties of the new Storage account",
                         "defaultValue": {
-                            "type": "Premium_LRS"
+                            "name": "storageaccount01",
+                            "type": "Standard_LRS"
                         },
-                        "toolTip": {
-                            "prefix": "Storage account name prefix",
-                            "type": "Storage account type"
+                         "options": {
+                            "hideExisting": true
                         },
-                        "count": 2,
                         "visible": true
                     }
                 ]
@@ -151,7 +149,7 @@
             "userName": "[steps('credentialsBlade').adminUsername]",
             "vmNamePrefix": "[steps('vmConfigBlade').vmNamePrefix]",
             "vmSize": "[steps('vmConfigBlade').vmSize]",
-            "storageAccountPrefix": "[steps('storageBlade').storageAccount.prefix]",
+            "storageAccountPrefix": "[steps('storageBlade').storageAccount.name]",
             "storageAccountType": "[steps('storageBlade').storageAccount.type]"
         }
     }
