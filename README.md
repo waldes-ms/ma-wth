@@ -1,15 +1,11 @@
-# A workshop for Azure Managed Applications
+# Azure Managed Applications 
 
-## Hands-on Labs
+## Challenges
 
-Lab 1 - [Your first Azure Managed Application](./lab-1/lab-1.md)
+[Challenge 0: Prerequizites](./Student/00-student-prereqs.md)
 
-Lab 2 - [Partner Center Walkthough 1](https://dstarr.github.io/ama-workshop/lab-2/)
+[Challenge 1: Deploy your first Azure Managed Application with Service Catalog](./Student/01-student-deploy_to_service_catalog.md)
 
-Lab 3 - [Customizing the Managed Application UX](./lab-3/lab-3.md)
+[Challenge 2: Modify the application](./Student/02-student-modify_and_redeploy.md)
 
-Lab 4 - [Working with Customer Providers and Resources](./lab-4/lab-4.md)
-
-## Workshop Recording
-
-- [Watch Here](https://www.youtube.com/playlist?list=PLmsFUfdnGr3xpz1Q1ExBxj2Dk_dWqzGB6)
+...
