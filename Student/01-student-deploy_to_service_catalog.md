@@ -10,17 +10,20 @@ Deploying an Managed Application consist of two main steps, creating the Service
     mainTemplate.json - an ARM template for resources beeing deployed
     CreateUIDefinition.json - file used to define the user interface when creating Managed Applictaion
 Both of those files are provided for this challenge.
-Before You begin in Azure portal create a new resource group, storage account and a storage container. Use the following values for storage account properties:
+
+1. Before You begin in Azure portal create a new resource group, storage account and a storage container. Use the following values for storage account properties:
     - Storage account name > Some unique value
     - Basics > Replication > Locally Redundant Storage (LRS)
     - Networking > Network Connectivity > Public endpoint (all networks)
     - For the rest > Leave the defauls
 
-4. Create a **Service Catalog Managed Application Definition** in the same resource group (*Using Portal will be easier). 
+2. Upload packaged application to storage container
 
-5. Navigate to Service Catalog Managed Application Definition blade and create a **Service Catalog Managed Application** from it in a separate resource group (look for "Deploy from definition" button).
+3. Create a **Service Catalog Managed Application Definition** in the same resource group (*Using Portal will be easier). 
 
-6. Once the deployment is complete connect to the virtual machine via RDP. After verifing the remote connection, you may shut down the machine so you won’t be charged for VM uptime.
+4. Create a **Service Catalog Managed Application** from it in a separate resource group (look for "Deploy from definition" button).
+
+Once the deployment is complete connect to the virtual machine via RDP. After verifing the remote connection, you may shut down the machine so you won’t be charged for VM uptime.
 
 ## Success Criteria
 
