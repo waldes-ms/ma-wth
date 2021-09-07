@@ -15,6 +15,11 @@ If you do not have an Azure subscription, you can create a free one [here](https
 
     [Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
     
-3. Optionally You may want to visualize Your template with ARM Template Viewer.
+3.	Clone this repo to Your local machine [Workshop App](https://github.com/mabotova/ma-wth)
+
+
+4.	Optionally You may want to visualize Your template with ARM Template Viewer.
 
     [Arm Template Viewer](https://marketplace.visualstudio.com/items?itemName=bencoleman.armview)
+    
+    
